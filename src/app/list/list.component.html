@@ -1,0 +1,33 @@
+<p>list works!</p>
+
+
+<button>loaddata</button>
+<div class="main">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Contact.No</th>
+        <th scope="col">Age</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of session; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{s.name}}</td>
+        <td>{{s.email}}</td>
+        <td>{{s.contactno}}</td>
+        <td>{{s.age}}</td>
+
+
+      </tr>
+
+      <button (click)="clear()">Clear</button>
+      <!-- <tr *>
+        <td>{{session.name}}</td>
+        <td>{{session.email}}</td>
+      </tr> -->
+      <div>
